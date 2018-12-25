@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 
-class SignIn extends Component {
+class CreateProject extends Component {
     constructor(props){
         super(props);
 
         this.state = {
-            email: '',
-            password: ''
+            title: '',
+            content: ''
         }
     }
 
@@ -26,17 +26,17 @@ class SignIn extends Component {
         return (
             <div className="container">
                 <form className="white" onSubmit={this.handleSubmit}>
-                    <h5 className="grey-text text-darken-3">Sign in</h5>
+                    <h5 className="grey-text text-darken-3">Create new project</h5>
                     <div className="input-field">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" id="email" onChange={this.handleChange}/>
+                        <label htmlFor="title">Title</label>
+                        <input type="text" id="title" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
-                        <label htmlFor="password">Password</label>
-                        <input type="password" id="password" onChange={this.handleChange}/>
+                        <label htmlFor="content">Project Content</label>
+                        <textarea className='materialize-textarea' id="content" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0">Login</button>
+                        <button className="btn pink lighten-1 z-depth-0">Create</button>
                     </div>
                 </form>
             </div>
@@ -45,4 +45,4 @@ class SignIn extends Component {
 }
 
 
-export default SignIn;
+export default CreateProject;

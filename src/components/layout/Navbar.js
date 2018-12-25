@@ -6,7 +6,7 @@ import SignOutLinks from './SignedOutLinks'
 
 
 const Navbar = (props) => {
-    const signed = false;
+    const signed = true;
 
     return (
         <nav className="nav-wrapper grey darken-3">

@@ -1,0 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import 'materialize-css/dist/css/materialize.min.css';  //materialize UI
+//components
+import SignInLinks from './SignedInLinks';
+import SignOutLinks from './SignedOutLinks'
+
+
+const Navbar = (props) => {
+    const signed = false;
+
+    return (
+        <nav className="nav-wrapper grey darken-3">
+            <div className="container">
+                <Link to='/' className='brand-logo'>MarioPlan</Link>
+                { signed ? (<SignInLinks/>) : (<SignOutLinks/>) }
+            </div>
+        </nav>
+    )
+};
+
+
+export default Navbar;

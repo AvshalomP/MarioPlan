@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
 //components
 import Notification from './Notifications';
 import ProjectList from '../projects/ProjectList';

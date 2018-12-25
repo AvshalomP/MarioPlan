@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'materialize-css/dist/css/materialize.min.css';  //materialize UI
 //components
 import SignInLinks from './SignedInLinks';
 import SignOutLinks from './SignedOutLinks'

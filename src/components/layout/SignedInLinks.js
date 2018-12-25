@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import 'materialize-css/dist/css/materialize.min.css';  //materialize UI
 
 
 const SignedInLinks = () => {

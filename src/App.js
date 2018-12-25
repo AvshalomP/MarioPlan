@@ -18,6 +18,7 @@ class App extends Component {
           <div className="App">
               <Navbar/>
               <Switch>
+                  {/* root */}
                   <Route exact path='/' component={Dashboard}/>
                   {/* /project */}
                   <Route exact path='/create' component={CreateProject}/>
